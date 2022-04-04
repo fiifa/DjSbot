@@ -1,8 +1,5 @@
 # DjSbot
-🥳 | SimpleBOT 
-🔔 | Easy bot 
-💝 | You Can copy and paste 
-😄 | ReplIT
+🥳 | SimpleBOT <br>🔔 | Easy bot <br>💝 | You Can copy and paste <br> 😄 | ReplIT
 
 # Owner 
 ©: fifa_#2575 
