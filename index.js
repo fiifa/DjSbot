@@ -34,10 +34,26 @@ for(file of commands) {
 }
 
  
+const reactions = {}
+for (let x of fs.readdirSync(__dirname + "/reactions")) {
+    let d;
+    try {
+        d = require(`./reactions/${x}`);
+    } catch (e) {
+        console.log(e);
+        continue;
+    }
+
+    reactions[d.id] = d.run;
+} 
+
 
 
   client.on('messageCreate', message => {
     
+let reaction = reactions[message.channel.id];
+if (reaction) reaction(message); 
+
 
         
      
