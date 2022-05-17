@@ -101,18 +101,7 @@ client.on("messageCreate", async(message) => {
      await db.set(`msgs_${message.author.id}`, e + 1)
         });
 
-  client.on("guildMemberAdd", member => {
-
-message.guild.channels.cache.get("TVUJ-KANAL").send({content: `${member} se připojil! Ahoj! 👋`})
-
-});
-
-    client.on("guildMemberRemove", member => {
-
-message.guild.channels.cache.get("TVUJ-KANAL").send({content: `${member} se odpojil! Ahoj! 👋`})
-
-});              
-
+   
   const load = dirs => {
     
     const events = fs.readdirSync(`./events/${dirs}/`).filter(d => d.endsWith("js") );
